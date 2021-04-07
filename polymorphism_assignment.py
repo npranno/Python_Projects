@@ -37,9 +37,9 @@ class Customer(User):
 
     def login(self):
         ask_name = input("What is your name? ")
-        ask_email = input("What is your email? ")
-        ask_pass = input("What is your password? ")
-        if (ask_email == self.email and ask_pass == self.password):
+        ask_id = input("What is your Customer ID? ")
+        ask_location = input("What is your Location? ")
+        if (ask_id == self.cust_id and ask_location == self.cust_location):
             print("Welcome back, {}".format(ask_name))
         else:
             print("The email or password you entered is incorrect.")
@@ -52,4 +52,7 @@ class Customer(User):
 if __name__ == "__main__":
     customer = Customer()
     customer.login()
+
+    emp = Employee()
+    emp.login()
 
