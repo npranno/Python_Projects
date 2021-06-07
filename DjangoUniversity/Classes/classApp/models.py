@@ -9,7 +9,7 @@ class djangoClasses(models.Model):
     instructor_name = models.CharField(max_length=60)
     course_duration = models.DecimalField(max_digits=10000, decimal_places=2)
 
-    objects = models.Manager()
+    objects = models.Manager() #object manager
 
     def __str__(self):
-        return self.course_title
+        return self.course_title #returns column from database to alter on the site
