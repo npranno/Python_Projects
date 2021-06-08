@@ -1,2 +1,2 @@
-# Python_Projects
- Repository for my projects while learning Python while going to school at The Tech Academy
+# Basic Python Projects
+This is a repository with basic projects written in Python, using various modules such as tkinter, sqlite3, and the django framework.
